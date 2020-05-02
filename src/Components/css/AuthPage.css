@@ -1,0 +1,55 @@
+.auth-background {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../../resources/images/Login.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-field {
+    width: 40%;
+    background-color: #0D1E42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-field {
+    width: 60%;
+    background-color: #000D22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-interface {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-text {
+    color: #cccccc;
+    font-size: 25px;
+}
+
+.auth-input {
+    margin: 5px;
+    width: 80%;
+}
