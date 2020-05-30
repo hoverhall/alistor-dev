@@ -18,7 +18,7 @@ export default class extends Component {
 
         this.setCurrent = this.setCurrent.bind(this)
         this.state = {
-            
+            burgerMenu: false
         }
     }
 
@@ -30,7 +30,7 @@ export default class extends Component {
         return (
             <>
             <header>
-                <Link to="/" className="logo">
+                <Link to="/" className="logo" onClick={this.setCurrent}>
                     <img src={logo} alt="logo" className="logo-image"/>
                     <span className="logo-name">Alistor</span>
                 </Link>

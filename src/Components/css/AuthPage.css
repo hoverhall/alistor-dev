@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.auth-image {
+    width: 80%;
+}
+
 .auth {
     width: 60%;
     height: 40%;
@@ -36,8 +40,13 @@
     align-items: center;
 }
 
+.auth-field * {
+    margin: 2px
+}
+
 .auth-interface {
     width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,11 +54,18 @@
 }
 
 .auth-text {
+
     color: #cccccc;
     font-size: 25px;
 }
 
 .auth-input {
-    margin: 5px;
+    /* margin: 5px; */
     width: 80%;
+}
+
+@media only screen and (orientation: portrait) {
+    .auth {
+        width: 100%;
+    }
 }

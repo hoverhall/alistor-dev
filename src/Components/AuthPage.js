@@ -9,13 +9,13 @@ export default (props) => (
     <div className="auth-background">
         <div className="auth">
             <div className="logo-field">
-                <img src={logo} alt="" />
+                <img className="auth-image" src={logo} alt="" />
             </div>
             <div className="auth-field">
                 <div className="auth-interface">
                     <span className="auth-text">LOGIN</span>
                     <Input className="auth-input" placeHolder="Login" color="#cccccc" />
-                    <Input className="auth-input" placeHolder="Password" color="#cccccc" type="password"/>
+                    <Input className="auth-input" placeHolder="Password" color="#cccccc" type="password" />
                     <Button className="auth-button" text="Log in" onClick={props.action} link="/" style={{
                         // backgroundColor: "#284FA7",
                         color: "#cccccc"

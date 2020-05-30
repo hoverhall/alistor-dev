@@ -1,12 +1,13 @@
 header {
-    width: 100%;
-    height: 70px;
+    min-width: 100%;
+    /* height: 70px; */
 
     background-color: #000D22;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
 }
 
 .user-input {
@@ -14,6 +15,7 @@ header {
 }
 
 .logo {
+    margin-left: 20px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -27,6 +29,13 @@ header {
     color: #fff;
     font-size: 30px;
 
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin: auto; */
 }
 
 .menu-item {
@@ -54,6 +63,9 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* align-self: flex-end; */
+    /* margin-left: auto; */
+
 }
 
 .user * {
@@ -89,12 +101,18 @@ header {
     color: #424242;
 }
 
-@media (width: 1060) {
+@media only screen and (max-width: 1060px) {
     header {
-        height: 500;
-        display: flex;  
         flex-direction: column;
-        /* justify-content: space-between; */
-        /* align-items: center; */
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 0;
     }
 }

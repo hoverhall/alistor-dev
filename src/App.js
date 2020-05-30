@@ -11,6 +11,7 @@ import AddProduct from './Components/AddProduct'
 import RemoveProduct from './Components/RemoveProduct'
 import StorageInfo from './Components/StorageInfo'
 import User from './Components/User'
+import EditCathegories from './Components/EditCathegories'
 
 class App extends Component {
   constructor (props) {
@@ -31,6 +32,7 @@ class App extends Component {
   render () {
     return (
       <>
+      <div className="bg"></div>
       <Route exact path="/auth">
         {!this.state.isLoggedIn && <AuthPage action={this.handler} />}
       </Route>
@@ -44,8 +46,9 @@ class App extends Component {
           <Route path="/remove" component={RemoveProduct} />
           <Route path="/edit" component={EditStorage} />
           <Route path="/user" component={User} />
+          <Route path="/cath" component={EditCathegories} />
         </div>
-      </Route >}
+      </Route>}
       </>
     )
   }
